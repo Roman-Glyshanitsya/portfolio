@@ -134,6 +134,10 @@ ul {
 }
 
 /* Section About */
+section {
+    height: 100vh;
+}
+
 .section__about__title {
     font-family: 'Archivo';
     font-weight: 900;
@@ -146,24 +150,45 @@ ul {
 }
 
 .section__about__title--colored {
-        font-weight: 700;
-        line-height: 31px;
-        /* identical to box height */
-        color: #D3902A;
-        margin-bottom: 40px;
+    font-weight: 700;
+    line-height: 31px;
+    /* identical to box height */
+    color: #D3902A;
+    margin-bottom: 40px;
 }
 
 .section__about__text {
     font-family: 'Space Grotesk';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 36px;
-        /* or 150% */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    /* or 150% */
     
-        letter-spacing: -0.25px;
+    letter-spacing: -0.25px;
     
-        color: rgba(0, 2, 1, 0.6);
-        margin-bottom: 25px;
-        max-width: 510px;
+    color: rgba(0, 2, 1, 0.6);
+    margin-bottom: 25px;
+    max-width: 510px;
+}
+
+/* Swiper */
+/* .swiper { 
+    width: 600px;
+    height: 300px;
+} */
+
+/* .swiper-wrapper {
+    display: flex;
+    min-width: 0;
+} */
+
+/* .swiper-btn-next::after,
+.swiper-btn-prev::after {
+    color: #000201;
+    content: '→'
+} */
+
+.swiper-slide img {
+    max-width: 100%;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Portfolio</title>
   </head>
@@ -36,10 +37,33 @@
             <p class="section__about__text">
               I am either smiling or looking super serious. If it's the latter one, I am probably thinking about food.
             </p>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/swiper-images/image-1.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="images/swiper-images/image-2.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="images/swiper-images/image-3.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="images/swiper-images/image-4.jpg" alt="" /></div>
+              </div>
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
           </section>
         </div>
       </main>
       <!-- <footer class="footer">Footer</footer> -->
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
   </body>
 </html>
