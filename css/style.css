@@ -22,7 +22,8 @@ body {
     line-height: 1;
     font-size: 24px;
     letter-spacing: -0.25px;
-    color: rgba(0, 2, 1, 0.6);;
+    color: rgba(0, 2, 1, 0.6);
+    background-color: #F8F4F0;
 }
 
 html, body {
@@ -40,8 +41,129 @@ p {
     margin-top: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
 /* img {
     display: block;
     max-width: 100%;
     height: auto;
 } */
+
+.wrapper {
+    overflow: hidden;
+}
+
+[class*="__container"] {
+    max-width: 1025px;
+    padding: 140px 25px 25px 0px;
+}
+
+/* Header */
+.header {
+    height: 100%;
+    width: 380px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 25px;
+}
+
+.header__menu {
+    padding-left: 25px;
+}
+
+.header__logo {
+    font-family: 'Archivo';
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -0.8px;
+    color: #000201;
+}
+
+.header__nav {
+    margin-top: 90px;
+}
+
+.nav__item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.nav__link {
+    font-family: 'Archivo';
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.8px;
+    color: rgba(0, 2, 1, 0.4);
+}
+
+.nav__link:hover {
+    color: #000201;
+}
+
+.dark-theme {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #000201;
+}
+
+/* @media screen and (max-height: 450px) {
+    .header {padding-top: 10px;}
+} */
+
+/* Main */
+.main {
+    margin-left: 380px;
+}
+
+/* Section About */
+.section__about__title {
+    font-family: 'Archivo';
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    /* or 117% */
+    letter-spacing: -0.8px;
+    color: #000201;
+    margin-bottom: 15px;
+}
+
+.section__about__title--colored {
+        font-weight: 700;
+        line-height: 31px;
+        /* identical to box height */
+        color: #D3902A;
+        margin-bottom: 40px;
+}
+
+.section__about__text {
+    font-family: 'Space Grotesk';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        /* or 150% */
+    
+        letter-spacing: -0.25px;
+    
+        color: rgba(0, 2, 1, 0.6);
+        margin-bottom: 25px;
+        max-width: 510px;
+}
