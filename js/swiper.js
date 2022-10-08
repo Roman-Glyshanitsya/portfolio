@@ -27,4 +27,6 @@ const swiper = new Swiper('.swiper', {
     releaseOnEdges: true,
     eventsTarget: '.section__about',
   },
+
+  slidesPerView: 2.3,
 });

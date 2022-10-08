@@ -64,7 +64,7 @@ ul {
 
 [class*="__container"] {
     max-width: 1025px;
-    padding: 140px 25px 25px 0px;
+    padding: 70px 25px 25px 0px;
 }
 
 /* Header */
@@ -141,28 +141,29 @@ section {
 .section__about__title {
     font-family: 'Archivo';
     font-weight: 900;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 24px;
+    line-height: 1.17;
     /* or 117% */
     letter-spacing: -0.8px;
     color: #000201;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .section__about__title--colored {
     font-weight: 700;
+    font-size: 20px;
     line-height: 31px;
     /* identical to box height */
     color: #D3902A;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .section__about__text {
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 1.5;
     /* or 150% */
     
     letter-spacing: -0.25px;
@@ -183,12 +184,19 @@ section {
     min-width: 0;
 } */
 
-/* .swiper-btn-next::after,
-.swiper-btn-prev::after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
     color: #000201;
-    content: '→'
-} */
+    content: '→';
+}
+
+.swiper-button-prev::after {
+    content: '←';
+}
 
 .swiper-slide img {
     max-width: 100%;
+    width: 340px;
+    height: 250px;
+    padding-bottom: 15px;
 }
