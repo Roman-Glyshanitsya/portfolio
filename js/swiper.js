@@ -3,16 +3,10 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: false,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    //   type: 'progressbar',
-  },
-
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
     disabledClass: 'swiper-button-disabled',
   },
 

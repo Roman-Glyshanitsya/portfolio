@@ -63,6 +63,7 @@ ul {
 }
 
 [class*="__container"] {
+    position: relative;
     max-width: 1025px;
     padding: 70px 25px 25px 0px;
 }
@@ -174,30 +175,21 @@ section {
 }
 
 /* Swiper */
-/* .swiper { 
-    width: 600px;
-    height: 300px;
-} */
-
-/* .swiper-wrapper {
-    display: flex;
-    min-width: 0;
-} */
+.swiper-btns {
+outline: 3px solid orange;
+    /* position: absolute;
+    top: 0px;
+    left: 40px; */
+}
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
     color: #000201;
-    content: '→';
-}
-
-.swiper-button-prev::after {
-    content: '←';
 }
 
 .swiper-slide img {
     max-width: 100%;
-    width: 340px;
-    height: 250px;
+    width: 486px;
     padding-bottom: 15px;
 }
 
