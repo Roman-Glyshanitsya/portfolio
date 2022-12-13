@@ -1,20 +1,25 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'horizontal',
   loop: false,
+  spaceBetween: 40,
 
   // Navigation arrows
   navigation: {
     prevEl: '.swiper-button-prev',
     nextEl: '.swiper-button-next',
-    disabledClass: 'swiper-button-disabled',
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true,
-  },
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  //   draggable: true,
+  // },
+
+  // autoplay: {
+  //   delay: 1000,
+  //   stopOnLastSlide: true,
+  //   disableOnInteraction: false,
+  // },
 
   mousewheel: {
     invert: false,
@@ -23,4 +28,16 @@ const swiper = new Swiper('.swiper', {
   },
 
   slidesPerView: 2.3,
+
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1,
+  //   },
+  //   480: {
+  //     slidesPerView: 2,
+  //   },
+  //   992: {
+  //     slidesPerView: 3,
+  //   },
+  // },
 });

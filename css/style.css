@@ -52,18 +52,17 @@ ul {
     margin: 0;
 }
 
-/* img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
-} */
+}
 
 .wrapper {
     overflow: hidden;
 }
 
 [class*="__container"] {
-    position: relative;
     max-width: 1025px;
     padding: 70px 25px 25px 0px;
 }
@@ -144,7 +143,6 @@ section {
     font-weight: 900;
     font-size: 24px;
     line-height: 1.17;
-    /* or 117% */
     letter-spacing: -0.8px;
     color: #000201;
     margin-bottom: 8px;
@@ -165,7 +163,6 @@ section {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
-    /* or 150% */
     
     letter-spacing: -0.25px;
     
@@ -175,22 +172,34 @@ section {
 }
 
 /* Swiper */
-.swiper-btns {
-outline: 3px solid orange;
-    /* position: absolute;
-    top: 0px;
-    left: 40px; */
+.swiper-custom {
+    position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: -45px;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
+    font-size: 30px;
     color: #000201;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    right: 40px;
+    left: auto;
 }
 
 .swiper-slide img {
     max-width: 100%;
     width: 486px;
-    padding-bottom: 15px;
 }
 
 /* ==================== Works ====================== */
