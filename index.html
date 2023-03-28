@@ -54,16 +54,110 @@
             </div>
           </div>
         </section>
-        <section id="works" class="works__container">
-          <!-- Work Section -->
-          <h2 class="section__about__title">Works</h2>
-          <p class="section__about__text">Repository of projects that I worked before.</p>
-          <ul class="projects__list">
-            <li class="projects__item">All</li>
-            <li class="projects__item">School Projects</li>
-            <li class="projects__item">My Projects</li>
-          </ul>
+
+        <!-- Work Section -->
+        <section id="works" class="works">
+          <div class="works__container">
+            <h2 class="works__title">Works</h2>
+            <p class="works__text">Repository of projects that I worked before.</p>
+            <div class="works__filter filter-works">
+              <button data-filter="*" class="filter-works__item active" type="button">Show All</button>
+              <button data-filter="html" class="filter-works__item" type="button">HTML/CSS</button>
+              <button data-filter="js" class="filter-works__item" type="button">JavaScript</button>
+            </div>
+            <div class="works__items">
+              <article data-filter="html" class="works__item work">
+                <a href="#" class="work__image">
+                  <img src="./images/work-images/image-5.jpg" alt="image" />
+                </a>
+                <div class="work__body">
+                  <h3 class="work__title">
+                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                  </h3>
+                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+              </article>
+              <article data-filter="js" class="works__item work">
+                <a href="#" class="work__image">
+                  <img src="./images/work-images/image-6.jpg" alt="image" />
+                </a>
+                <div class="work__body">
+                  <h3 class="work__title">
+                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                  </h3>
+                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+              </article>
+              <article data-filter="html" class="works__item work">
+                <a href="#" class="work__image">
+                  <img src="./images/work-images/image-7.jpg" alt="image" />
+                </a>
+                <div class="work__body">
+                  <h3 class="work__title">
+                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                  </h3>
+                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+              </article>
+              <article data-filter="js" class="works__item work">
+                <a href="#" class="work__image">
+                  <img src="./images/work-images/image-8.jpg" alt="image" />
+                </a>
+                <div class="work__body">
+                  <h3 class="work__title">
+                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                  </h3>
+                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+              </article>
+              <article data-filter="html" class="works__item work">
+                <a href="#" class="work__image">
+                  <img src="./images/work-images/image-9.jpg" alt="image" />
+                </a>
+                <div class="work__body">
+                  <h3 class="work__title">
+                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                  </h3>
+                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+              </article>
+              <article data-filter="js" class="works__item work">
+                <a href="#" class="work__image">
+                  <img src="./images/work-images/image-10.jpg" alt="image" />
+                </a>
+                <div class="work__body">
+                  <h3 class="work__title">
+                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                  </h3>
+                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+              </article>
+              <article data-filter="html" class="works__item work">
+                <a href="#" class="work__image">
+                  <img src="./images/swiper-images/image-4.jpg" alt="image" />
+                </a>
+                <div class="work__body">
+                  <h3 class="work__title">
+                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                  </h3>
+                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+              </article>
+              <article data-filter="js" class="works__item work">
+                <a href="#" class="work__image">
+                  <img src="./images/swiper-images/image-3.jpg" alt="image" />
+                </a>
+                <div class="work__body">
+                  <h3 class="work__title">
+                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                  </h3>
+                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </section>
+
         <section id="resume" class="resume__container">
           <h2 class="section__about__title">Resume</h2>
           <p>
@@ -84,5 +178,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

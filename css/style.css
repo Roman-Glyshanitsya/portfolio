@@ -54,8 +54,8 @@ ul {
 
 img {
     display: block;
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%; */
+    /* height: auto; */
 }
 
 .wrapper {
@@ -134,9 +134,9 @@ img {
 }
 
 /* Section About */
-section {
+/* section {
     height: 100vh;
-}
+} */
 
 .section__about__title {
     font-family: 'Archivo';
@@ -203,3 +203,111 @@ section {
 }
 
 /* ==================== Works ====================== */
+.works__title {
+    font-family: 'Archivo';
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.17;
+    letter-spacing: -0.8px;   
+    color: #000201;
+    margin-bottom: 24px;
+}
+
+.works__text {
+    font-family: 'Space Grotesk';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: -0.25px; 
+    color: rgba(0, 2, 1, 0.6);
+    margin-bottom: 54px;
+}
+
+.works__filter {
+    margin-bottom: 55px;
+}
+
+.filter-works {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+}
+
+.filter-works__item {
+    font-family: 'Space Grotesk';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+    color: rgba(0, 2, 1, 0.6);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-works__item:hover,
+.filter-works__item.active {
+    color: #000201;
+}
+
+.works__items {
+    transition: all 0.3s;
+}
+
+.works__item {
+    width: 320px;
+}
+
+.works__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.work__image {
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work__image:hover img {
+    transform: scale(1.03);
+}
+
+.work__image img.init {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.work__body {
+    display: grid;
+    gap: 15px;
+}
+
+.work__link-title {
+    font-family: 'Space Grotesk';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.25px;
+    color: rgba(0, 2, 1, 0.6);
+}
+
+.work__link-title:hover {
+    text-decoration: underline;
+}
+
+.work__text {
+    font-family: 'Space Grotesk';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+    color: rgba(0, 2, 1, 0.6);
+}
