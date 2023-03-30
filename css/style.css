@@ -38,7 +38,7 @@ h4,
 h5,
 h6,
 p {
-    margin-top: 0;
+    margin: 0;
 }
 
 a {
@@ -48,7 +48,7 @@ a {
 
 ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
 }
 
@@ -63,8 +63,8 @@ img {
 }
 
 [class*="__container"] {
-    max-width: 1025px;
-    padding: 70px 25px 25px 0px;
+    /* max-width: 1025px; */
+    padding: 70px 20px 25px 0px;
 }
 
 /* Header */
@@ -128,16 +128,12 @@ img {
     .header {padding-top: 10px;}
 } */
 
-/* Main */
+/* ========== Main =========== */
 .main {
     margin-left: 380px;
 }
 
-/* Section About */
-/* section {
-    height: 100vh;
-} */
-
+/* ========= Section About =========== */
 .section__about__title {
     font-family: 'Archivo';
     font-weight: 900;
@@ -198,33 +194,34 @@ img {
 }
 
 .swiper-slide img {
-    max-width: 100%;
-    width: 486px;
+    /* max-width: 100%; */
+    width: 470px;
+    height: 320px;
 }
 
-/* ==================== Works ====================== */
+/* ========= Works =========== */
 .works__title {
     font-family: 'Archivo';
     font-weight: 900;
-    font-size: 48px;
+    font-size: 24px;
     line-height: 1.17;
     letter-spacing: -0.8px;   
     color: #000201;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 
 .works__text {
     font-family: 'Space Grotesk';
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.5;
     letter-spacing: -0.25px; 
     color: rgba(0, 2, 1, 0.6);
-    margin-bottom: 54px;
+    margin-bottom: 27px;
 }
 
 .works__filter {
-    margin-bottom: 55px;
+    margin-bottom: 25px;
 }
 
 .filter-works {
@@ -257,7 +254,7 @@ img {
 }
 
 .works__item {
-    width: 320px;
+    width: 350px;
 }
 
 .works__item:not(:last-child) {
@@ -266,7 +263,7 @@ img {
 
 .work__image {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     position: relative;
     overflow: hidden;
 }
@@ -287,13 +284,13 @@ img {
 
 .work__body {
     display: grid;
-    gap: 15px;
+    gap: 5px;
 }
 
 .work__link-title {
     font-family: 'Space Grotesk';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
     letter-spacing: -0.25px;
     color: rgba(0, 2, 1, 0.6);
@@ -310,4 +307,65 @@ img {
     line-height: 20px;
     letter-spacing: -0.25px;
     color: rgba(0, 2, 1, 0.6);
+}
+
+
+/* Resume Section */
+.resume-section {}
+
+.resume__container {}
+
+.section__about__title {}
+
+.section__about__text {}
+
+.job-thumb {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 25px;
+}
+
+.job-date {
+    width: 150px;
+    margin-right: 45px;
+
+    font-family: 'Space Grotesk';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #000201;
+}
+
+.job-title {
+    font-family: 'Space Grotesk';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+    color: #000201;
+    margin-bottom: 4px;
+}
+
+.job-company {
+    font-family: 'Space Grotesk';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.28;
+    letter-spacing: -0.25px;   
+    color: rgba(0, 2, 1, 0.6);
+    margin-bottom: 10px;
+}
+
+.resp-list {
+    list-style: square;
+}
+
+.resp-item {
+    font-family: 'Space Grotesk';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.57;
+    letter-spacing: -0.25px;
+    color: rgba(0, 2, 1, 0.6);
+    margin-left: 20px;
 }
