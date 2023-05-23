@@ -5,211 +5,226 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Portfolio</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__menu">
-          <a href="./index.html" class="header__logo">Roman H.</a>
-          <nav class="header__nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
-              <li class="nav__item"><a href="#works" class="nav__link">works</a></li>
-              <li class="nav__item"><a href="#resume" class="nav__link">resume</a></li>
-              <li class="nav__item"><a href="#contact" class="nav__link">contact</a></li>
-            </ul>
-          </nav>
-          <a href="" class="dark-theme"><img src="./images/sun/sun.svg" alt="dark theme" />Switch dark</a>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__menu">
+        <a href="./index.html" class="header__logo">Roman H.</a>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
+            <li class="nav__item"><a href="#works" class="nav__link">works</a></li>
+            <li class="nav__item"><a href="#resume" class="nav__link">resume</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">contact</a></li>
+          </ul>
+        </nav>
+        <a href="" class="dark__theme">
+          <img class="dark__theme__img" src="./images/sun/sun.svg" alt="dark theme" />
+          Switch dark
+        </a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- <div class="main__container"> -->
+      <!-- About Section -->
+      <section id="about" class="section__about section__about__container">
+        <h1 class="section__about__title">Simply said, <br />I love design and code.</h1>
+        <p class="section__about__title--colored">And... I love Javanese food</p>
+        <p class="section__about__text">
+          Based in the beautiful city of Bali, Indonesia. I am currently exploring the UI/UX design, Tailwind-css and
+          NextJS.
+        </p>
+        <p class="section__about__text">
+          I am either smiling or looking super serious. If it's the latter one, I am probably thinking about food.
+        </p>
+
+        <!-- Slider main container -->
+        <div class="swiper-custom">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="images/swiper-images/image-1.jpg" alt="" /></div>
+              <div class="swiper-slide"><img src="images/swiper-images/image-2.jpg" alt="" /></div>
+              <div class="swiper-slide"><img src="images/swiper-images/image-3.jpg" alt="" /></div>
+              <div class="swiper-slide"><img src="images/swiper-images/image-4.jpg" alt="" /></div>
+            </div>
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
         </div>
-      </header>
-      <main class="main">
-        <!-- <div class="main__container"> -->
-        <!-- About Section -->
-        <section id="about" class="section__about section__about__container">
-          <h1 class="section__about__title">Simply said, <br />I love design and code.</h1>
-          <p class="section__about__title--colored">And... I love Javanese food</p>
+      </section>
+
+      <!-- Work Section -->
+      <section id="works" class="works">
+        <div class="works__container">
+          <h2 class="works__title">Works</h2>
+          <p class="works__text">Repository of projects that I worked before.</p>
+          <div class="works__filter filter-works">
+            <button data-filter="*" class="filter-works__item active" type="button">Show All</button>
+            <button data-filter="html" class="filter-works__item" type="button">HTML/CSS</button>
+            <button data-filter="js" class="filter-works__item" type="button">JavaScript</button>
+          </div>
+          <div class="works__items">
+            <article data-filter="html" class="works__item work">
+              <a href="#" class="work__image">
+                <img src="./images/work-images/image-5.jpg" alt="image" />
+              </a>
+              <div class="work__body">
+                <h3 class="work__title">
+                  <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                </h3>
+                <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </article>
+            <article data-filter="js" class="works__item work">
+              <a href="#" class="work__image">
+                <img src="./images/work-images/image-6.jpg" alt="image" />
+              </a>
+              <div class="work__body">
+                <h3 class="work__title">
+                  <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                </h3>
+                <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </article>
+            <article data-filter="html" class="works__item work">
+              <a href="#" class="work__image">
+                <img src="./images/work-images/image-7.jpg" alt="image" />
+              </a>
+              <div class="work__body">
+                <h3 class="work__title">
+                  <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                </h3>
+                <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </article>
+            <article data-filter="js" class="works__item work">
+              <a href="#" class="work__image">
+                <img src="./images/work-images/image-8.jpg" alt="image" />
+              </a>
+              <div class="work__body">
+                <h3 class="work__title">
+                  <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                </h3>
+                <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </article>
+            <article data-filter="html" class="works__item work">
+              <a href="#" class="work__image">
+                <img src="./images/work-images/image-9.jpg" alt="image" />
+              </a>
+              <div class="work__body">
+                <h3 class="work__title">
+                  <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                </h3>
+                <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </article>
+            <article data-filter="js" class="works__item work">
+              <a href="#" class="work__image">
+                <img src="./images/work-images/image-10.jpg" alt="image" />
+              </a>
+              <div class="work__body">
+                <h3 class="work__title">
+                  <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                </h3>
+                <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </article>
+            <article data-filter="html" class="works__item work">
+              <a href="#" class="work__image">
+                <img src="./images/swiper-images/image-4.jpg" alt="image" />
+              </a>
+              <div class="work__body">
+                <h3 class="work__title">
+                  <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                </h3>
+                <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </article>
+            <article data-filter="js" class="works__item work">
+              <a href="#" class="work__image">
+                <img src="./images/swiper-images/image-3.jpg" alt="image" />
+              </a>
+              <div class="work__body">
+                <h3 class="work__title">
+                  <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
+                </h3>
+                <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume Section -->
+
+      <section id="resume" class="resume-section">
+        <div class="resume__container">
+          <h2 class="section__about__title">Resume</h2>
           <p class="section__about__text">
-            Based in the beautiful city of Bali, Indonesia. I am currently exploring the UI/UX design, Tailwind-css and
-            NextJS.
+            A summary of my education, work history, credentials, and other accomplishments and skills
           </p>
-          <p class="section__about__text">
-            I am either smiling or looking super serious. If it's the latter one, I am probably thinking about food.
-          </p>
-
-          <!-- Slider main container -->
-          <div class="swiper-custom">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="images/swiper-images/image-1.jpg" alt="" /></div>
-                <div class="swiper-slide"><img src="images/swiper-images/image-2.jpg" alt="" /></div>
-                <div class="swiper-slide"><img src="images/swiper-images/image-3.jpg" alt="" /></div>
-                <div class="swiper-slide"><img src="images/swiper-images/image-4.jpg" alt="" /></div>
-              </div>
-              <!-- <div class="swiper-scrollbar"></div> -->
+          <div class="job-thumb">
+            <p class="job-date">2020-present</p>
+            <div class="job-content">
+              <h3 class="job-title">Senior Product Designer</h3>
+              <p class="job-company">Kali Network Ltd.</p>
+              <ul class="resp-list">
+                <li class="resp-item">Manage company PDM management system</li>
+                <li class="resp-item">Design & rout HVAC ductwork using REVIT</li>
+                <li class="resp-item">Create working prototypes for new concept designs</li>
+                <li class="resp-item">Collaborate closely with developers, copywriters and UX designers</li>
+              </ul>
             </div>
           </div>
-        </section>
-
-        <!-- Work Section -->
-        <section id="works" class="works">
-          <div class="works__container">
-            <h2 class="works__title">Works</h2>
-            <p class="works__text">Repository of projects that I worked before.</p>
-            <div class="works__filter filter-works">
-              <button data-filter="*" class="filter-works__item active" type="button">Show All</button>
-              <button data-filter="html" class="filter-works__item" type="button">HTML/CSS</button>
-              <button data-filter="js" class="filter-works__item" type="button">JavaScript</button>
-            </div>
-            <div class="works__items">
-              <article data-filter="html" class="works__item work">
-                <a href="#" class="work__image">
-                  <img src="./images/work-images/image-5.jpg" alt="image" />
-                </a>
-                <div class="work__body">
-                  <h3 class="work__title">
-                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
-                  </h3>
-                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                </div>
-              </article>
-              <article data-filter="js" class="works__item work">
-                <a href="#" class="work__image">
-                  <img src="./images/work-images/image-6.jpg" alt="image" />
-                </a>
-                <div class="work__body">
-                  <h3 class="work__title">
-                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
-                  </h3>
-                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                </div>
-              </article>
-              <article data-filter="html" class="works__item work">
-                <a href="#" class="work__image">
-                  <img src="./images/work-images/image-7.jpg" alt="image" />
-                </a>
-                <div class="work__body">
-                  <h3 class="work__title">
-                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
-                  </h3>
-                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                </div>
-              </article>
-              <article data-filter="js" class="works__item work">
-                <a href="#" class="work__image">
-                  <img src="./images/work-images/image-8.jpg" alt="image" />
-                </a>
-                <div class="work__body">
-                  <h3 class="work__title">
-                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
-                  </h3>
-                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                </div>
-              </article>
-              <article data-filter="html" class="works__item work">
-                <a href="#" class="work__image">
-                  <img src="./images/work-images/image-9.jpg" alt="image" />
-                </a>
-                <div class="work__body">
-                  <h3 class="work__title">
-                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
-                  </h3>
-                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                </div>
-              </article>
-              <article data-filter="js" class="works__item work">
-                <a href="#" class="work__image">
-                  <img src="./images/work-images/image-10.jpg" alt="image" />
-                </a>
-                <div class="work__body">
-                  <h3 class="work__title">
-                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
-                  </h3>
-                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                </div>
-              </article>
-              <article data-filter="html" class="works__item work">
-                <a href="#" class="work__image">
-                  <img src="./images/swiper-images/image-4.jpg" alt="image" />
-                </a>
-                <div class="work__body">
-                  <h3 class="work__title">
-                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
-                  </h3>
-                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                </div>
-              </article>
-              <article data-filter="js" class="works__item work">
-                <a href="#" class="work__image">
-                  <img src="./images/swiper-images/image-3.jpg" alt="image" />
-                </a>
-                <div class="work__body">
-                  <h3 class="work__title">
-                    <a href="#" class="work__link-title">Lorem, ipsum dolor.</a>
-                  </h3>
-                  <p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                </div>
-              </article>
+          <div class="job-thumb">
+            <p class="job-date">2018-2020</p>
+            <div class="job-content">
+              <h3 class="job-title">UI Designer</h3>
+              <p class="job-company">Matic Job Ltd.</p>
+              <ul class="resp-list">
+                <li class="resp-item">Manage company PDM management system</li>
+                <li class="resp-item">Design & rout HVAC ductwork using REVIT</li>
+                <li class="resp-item">Create working prototypes for new concept designs</li>
+                <li class="resp-item">Create working prototypes for new concept designs</li>
+              </ul>
             </div>
           </div>
-        </section>
-
-        <!-- Resume Section -->
-
-        <section id="resume" class="resume-section">
-          <div class="resume__container">
-            <h2 class="section__about__title">Resume</h2>
-            <p class="section__about__text">
-              A summary of my education, work history, credentials, and other accomplishments and skills
-            </p>
-            <div class="job-thumb">
-              <p class="job-date">2020-present</p>
-              <div class="job-content">
-                <h3 class="job-title">Senior Product Designer</h3>
-                <p class="job-company">Kali Network Ltd.</p>
-                <ul class="resp-list">
-                  <li class="resp-item">Manage company PDM management system</li>
-                  <li class="resp-item">Design & rout HVAC ductwork using REVIT</li>
-                  <li class="resp-item">Create working prototypes for new concept designs</li>
-                  <li class="resp-item">Collaborate closely with developers, copywriters and UX designers</li>
-                </ul>
-              </div>
-            </div>
-            <div class="job-thumb">
-              <p class="job-date">2018-2020</p>
-              <div class="job-content">
-                <h3 class="job-title">UI Designer</h3>
-                <p class="job-company">Matic Job Ltd.</p>
-                <ul class="resp-list">
-                  <li class="resp-item">Manage company PDM management system</li>
-                  <li class="resp-item">Design & rout HVAC ductwork using REVIT</li>
-                  <li class="resp-item">Create working prototypes for new concept designs</li>
-                  <li class="resp-item">Create working prototypes for new concept designs</li>
-                </ul>
-              </div>
-            </div>
-            <div class="job-thumb">
-              <p class="job-date">2016-2018</p>
-              <div class="job-content">
-                <h3 class="job-title">WordPress Developer</h3>
-                <p class="job-company">Fortunel Studio</p>
-                <ul class="resp-list">
-                  <li class="resp-item">Manage company PDM management system</li>
-                  <li class="resp-item">Manage company PDM management system</li>
-                  <li class="resp-item">Design & rout HVAC ductwork using REVIT</li>
-                  <li class="resp-item">Create working prototypes for new concept designs</li>
-                </ul>
-              </div>
+          <div class="job-thumb">
+            <p class="job-date">2016-2018</p>
+            <div class="job-content">
+              <h3 class="job-title">WordPress Developer</h3>
+              <p class="job-company">Fortunel Studio</p>
+              <ul class="resp-list">
+                <li class="resp-item">Manage company PDM management system</li>
+                <li class="resp-item">Manage company PDM management system</li>
+                <li class="resp-item">Design & rout HVAC ductwork using REVIT</li>
+                <li class="resp-item">Create working prototypes for new concept designs</li>
+              </ul>
             </div>
           </div>
-        </section>
-      </main>
-      <!-- <footer class="footer">Footer</footer> -->
-    </div>
+        </div>
+      </section>
+    </main>
+    <!-- <footer class="footer">Footer</footer> -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
