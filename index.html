@@ -26,7 +26,7 @@
         <a href="./index.html" class="header__logo">Roman H.</a>
         <nav class="header__nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link active">about</a></li>
             <li class="nav__item"><a href="#works" class="nav__link">works</a></li>
             <li class="nav__item"><a href="#resume" class="nav__link">resume</a></li>
             <li class="nav__item"><a href="#contact" class="nav__link">contact</a></li>
@@ -43,14 +43,14 @@
     <main class="main">
       <!-- About Section -->
       <section id="about" class="section__about section__about__container">
-        <h1 class="section__about__title">Simply said, <br />I love design and code.</h1>
-        <p class="section__about__title--colored">And... I love Javanese food</p>
-        <p class="section__about__text">
+        <h1 class="section__title">Simply said, <br />I love design and code.</h1>
+        <p class="section__title--colored">And... I love Javanese food</p>
+        <p class="section__text">
           Based in the beautiful city of Bali, Indonesia. I am currently exploring the
-          <span class="section__about__text--bold">UI/UX design, Tailwind-css</span> and
-          <span class="section__about__text--bold">NextJS</span>.
+          <span class="section__text--bold">UI/UX design, Tailwind-css</span> and
+          <span class="section__text--bold">NextJS</span>.
         </p>
-        <p class="section__about__text">
+        <p class="section__text">
           I am either smiling or looking super serious. If it's the latter one, I am probably thinking about food.
         </p>
 
@@ -74,8 +74,8 @@
       <!-- Work Section -->
       <section id="works" class="works">
         <div class="works__container">
-          <h2 class="works__title">Works</h2>
-          <p class="works__text">Repository of projects that I worked before.</p>
+          <h2 class="section__title">Works</h2>
+          <p class="section__text">Repository of projects that I worked before.</p>
           <div class="works__filter filter-works">
             <button data-filter="*" class="filter-works__item active" type="button">Show All</button>
             <button data-filter="html" class="filter-works__item" type="button">HTML/CSS</button>
@@ -178,8 +178,8 @@
 
       <section id="resume" class="resume-section">
         <div class="resume__container">
-          <h2 class="section__about__title">Resume</h2>
-          <p class="section__about__text">
+          <h2 class="section__title">Resume</h2>
+          <p class="section__text">
             A summary of my education, work history, credentials, and other accomplishments and skills
           </p>
           <div class="job-thumb">
@@ -189,7 +189,7 @@
               <p class="job-company">Kali Network Ltd.</p>
               <ul class="resp-list">
                 <li class="resp-item">Manage company PDM management system</li>
-                <li class="resp-item">Design & rout HVAC ductwork using REVIT</li>
+                <li class="resp-item">Design and rout HVAC ductwork using REVIT</li>
                 <li class="resp-item">Create working prototypes for new concept designs</li>
                 <li class="resp-item">Collaborate closely with developers, copywriters and UX designers</li>
               </ul>
@@ -202,7 +202,7 @@
               <p class="job-company">Matic Job Ltd.</p>
               <ul class="resp-list">
                 <li class="resp-item">Manage company PDM management system</li>
-                <li class="resp-item">Design & rout HVAC ductwork using REVIT</li>
+                <li class="resp-item">Design and rout HVAC ductwork using REVIT</li>
                 <li class="resp-item">Create working prototypes for new concept designs</li>
                 <li class="resp-item">Create working prototypes for new concept designs</li>
               </ul>
@@ -216,15 +216,51 @@
               <ul class="resp-list">
                 <li class="resp-item">Manage company PDM management system</li>
                 <li class="resp-item">Manage company PDM management system</li>
-                <li class="resp-item">Design & rout HVAC ductwork using REVIT</li>
+                <li class="resp-item">Design and rout HVAC ductwork using REVIT</li>
                 <li class="resp-item">Create working prototypes for new concept designs</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Contact Section -->
+
+      <section id="contact" class="contact-section">
+        <div class="contact__container">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__text">Let's Chat!</p>
+
+          <form action="">
+            <div class="modal__form">
+              <label for="" class="modal__label">
+                <span class="modal__input__title">Name</span>
+                <input type="text" name="user_name" placeholder="Enter your name" class="modal__input" />
+              </label>
+            </div>
+
+            <div class="modal__form">
+              <label for="" class="modal__label">
+                <span class="modal__input__title">Email</span>
+                <input type="email" name="user_email" placeholder="Enter your email" class="modal__input" />
+              </label>
+            </div>
+
+            <label for="" class="modal__label">
+              <span class="modal__input__title">Message</span>
+              <textarea
+                class="modal__input form__message"
+                name="user_message"
+                cols=""
+                rows="8"
+                placeholder="Anything I can help? Let me know"
+              ></textarea>
+            </label>
+            <button type="submit" class="modal__button">Send</button>
+          </form>
+        </div>
+      </section>
     </main>
-    <!-- <footer class="footer">Footer</footer> -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>

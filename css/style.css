@@ -56,6 +56,22 @@ img {
     padding: 70px 20px 25px 0px;
 }
 
+.section__title {
+    font-family: 'Archivo';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.8px;
+    color: #000201;
+    margin-bottom: 8px;
+}
+
+.section__text {
+    max-width: 510px;
+    margin-bottom: 25px;
+}
+
+
 /* ============= Header =============== */
 .header {
     height: 100%;
@@ -125,29 +141,14 @@ img {
 }
 
 /* ========= Section About =========== */
-.section__about__title {
-    font-family: 'Archivo';
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.8px;
-    color: #000201;
-    margin-bottom: 8px;
-}
-
-.section__about__title--colored {
+.section__title--colored {
     font-weight: 700;
     line-height: 1.55;
     color: #D3902A;
     margin-bottom: 20px;
 }
 
-.section__about__text {
-    max-width: 510px;
-    margin-bottom: 25px;
-}
-
-.section__about__text--bold {
+.section__text--bold {
     color: #000201;
 }
 
@@ -183,20 +184,6 @@ img {
 }
 
 /* ========= Works =========== */
-.works__title {
-    font-family: 'Archivo';
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.8px;   
-    color: #000201;
-    margin-bottom: 12px;
-}
-
-.works__text {
-    margin-bottom: 27px;
-}
-
 .works__filter {
     margin-bottom: 25px;
 }
@@ -212,6 +199,7 @@ img {
 .filter-works__item {
     font-size: 16px;
     line-height: 1.25;
+    color: rgba(0, 2, 1, 0.6);
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
     transition: all 0.3s;
@@ -274,14 +262,6 @@ img {
 
 
 /* Resume Section */
-.resume-section {}
-
-.resume__container {}
-
-.section__about__title {}
-
-.section__about__text {}
-
 .job-thumb {
     display: flex;
     align-items: baseline;
@@ -292,30 +272,22 @@ img {
     width: 150px;
     margin-right: 45px;
 
-    font-family: 'Space Grotesk';
     font-weight: 600;
-    font-size: 20px;
     line-height: 1.3;
     color: #000201;
 }
 
 .job-title {
-    font-family: 'Space Grotesk';
     font-weight: 600;
-    font-size: 20px;
     line-height: 20px;
-    letter-spacing: -0.25px;
     color: #000201;
     margin-bottom: 4px;
 }
 
 .job-company {
-    font-family: 'Space Grotesk';
     font-weight: 500;
     font-size: 18px;
-    line-height: 1.28;
-    letter-spacing: -0.25px;   
-    color: rgba(0, 2, 1, 0.6);
+    line-height: 1.28; 
     margin-bottom: 10px;
 }
 
@@ -324,11 +296,62 @@ img {
 }
 
 .resp-item {
-    font-family: 'Space Grotesk';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.57;
-    letter-spacing: -0.25px;
-    color: rgba(0, 2, 1, 0.6);
     margin-left: 20px;
+}
+
+/* =========== Contact =============== */
+.contact-section {}
+
+.contact__container {}
+
+.modal__form {
+
+}
+
+.modal__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.modal__input__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.27;    
+    color: #000201;
+}
+
+.modal__input {
+    width: 579px;
+    padding: 16px;
+    margin-bottom: 5px;
+    background: #F1ECE6;
+    cursor: pointer;
+}
+
+.modal__input::placeholder {
+    font-size: 18px;
+    line-height: 1.27;    
+    color: #9D9690;
+}
+
+/* .modal__input:focus {
+    border-color: #D3902A;
+} */
+
+.form__message {}
+
+.modal__button {
+    padding: 16px 60px;
+    width: 164px;
+    height: 55px;
+    background-color: #000201;
+
+
+    font-size: 18px;
+    line-height: 1.27;    
+    color: #F8F4F0;
 }
