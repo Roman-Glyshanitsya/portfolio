@@ -17,7 +17,7 @@ body {
 body {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.5;
     letter-spacing: -0.25px;
     color: rgba(0, 2, 1, 0.6);
@@ -72,6 +72,7 @@ img {
 .header__logo {
     font-family: 'Archivo';
     font-weight: 700;
+    font-size: 24px;
     line-height: 26px;
     letter-spacing: -0.8px;
     color: #000201;
@@ -88,7 +89,8 @@ img {
 .nav__link {
     font-family: 'Archivo';
     font-weight: 500;
-    line-height: 26px;
+    font-size: 24px;
+    line-height: 1.08;
     letter-spacing: -0.8px;
     color: rgba(0, 2, 1, 0.4);
 }
@@ -136,24 +138,19 @@ img {
 .section__about__title--colored {
     font-weight: 700;
     font-size: 20px;
-    line-height: 31px;
-    /* identical to box height */
+    line-height: 1.55;
     color: #D3902A;
     margin-bottom: 20px;
 }
 
 .section__about__text {
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
-    line-height: 1.5;
-    
-    letter-spacing: -0.25px;
-    
-    color: rgba(0, 2, 1, 0.6);
-    margin-bottom: 25px;
     max-width: 510px;
+    margin-bottom: 25px;
+}
+
+.section__about__text--bold {
+    color: #000201;
 }
 
 /* Swiper */
@@ -200,12 +197,7 @@ img {
 }
 
 .works__text {
-    font-family: 'Space Grotesk';
-    font-weight: 400;
     font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: -0.25px; 
-    color: rgba(0, 2, 1, 0.6);
     margin-bottom: 27px;
 }
 
