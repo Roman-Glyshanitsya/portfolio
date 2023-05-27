@@ -23,9 +23,27 @@
     <!-- Header -->
     <header class="header">
       <a href="./index.html" class="header__logo">Roman H.</a>
+
+      <!-------------------------------- Start Header Mobile Menu ---------------------------------->
       <button type="button" class="header__mobile-menu-btn" data-menu-button>
         <img src="./images/menu-burger-icon.svg" alt="" width="40" height="40" />
       </button>
+
+      <div class="header__mobile-menu">
+        <input id="toggle" type="checkbox" />
+        <label class="toggle-container" for="toggle">
+          <span class="button button-toggle"></span>
+        </label>
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#about" class="nav__link active">about</a></li>
+            <li class="nav__item"><a href="#works" class="nav__link">works</a></li>
+            <li class="nav__item"><a href="#resume" class="nav__link">resume</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-------------------------------- END Header Mobile Menu ------------------------------------->
 
       <div class="header__menu">
         <nav class="header__nav">

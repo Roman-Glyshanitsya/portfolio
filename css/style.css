@@ -81,7 +81,7 @@ img {
         letter-spacing: -0.8px;
         color: #000201;
     }
-/* ========== Mobile Header Menu ============*/
+/* ========== Header Mobile Menu ============*/
 @media screen and (max-width: 767px) {
     .header {
         display: flex;
@@ -89,12 +89,95 @@ img {
         justify-content: space-between;
         padding: 25px;
 
-       background-color: teal;
+       /* background-color: teal; */
     }
 
     .header__mobile-menu-btn {
-        background-color: inherit;
+        background-color: transparent;
     }
+
+    /* new start */
+
+    .header__mobile-menu {
+        position: relative;
+        /* width: 100%; */
+        background-color: transparent;
+        overflow: hidden;
+    }
+
+        #toggle {
+            position: absolute;
+            left: -100%;
+            top: -100%;
+        }
+    
+        #toggle:focus {
+    
+            &~.toggle-container .button-toggle {
+                box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+                #toggle:checked {
+                    // Any element you need to change the style if menu is open goes here, using the sibling selector (~) as follows
+        
+                    // Making the "X" icon using `:before` and `:after` pseudo-elements
+                    &~.toggle-container .button-toggle {
+                        box-shadow: 0 0 0 550px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+        
+                        &:hover {
+                            box-shadow: 0 0 0 550px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+                        }
+        
+                        &:before {
+                            transform: translateY(-50%) rotate(45deg) scale(1);
+                        }
+        
+                        &:after {
+                            transform: translateY(-50%) rotate(-45deg) scale(1);
+                        }
+                    }
+        
+                    &:focus~.toggle-container .button-toggle {
+                        box-shadow: 0 0 0 550px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+                    }
+        
+                    
+                    &~.nav {
+                        margin-bottom: 100px;
+                        pointer-events: auto;
+                        transform: translate(50px, 50px);
+        
+                        .nav-item {
+                            color: #EC7263;
+                            letter-spacing: 0;
+                            height: 40px;
+                            line-height: 40px;
+                            margin-top: 0;
+                            opacity: 1;
+                            transform: scaleY(1);
+                            transition: 0.5s, opacity 0.1s;
+        
+                          
+                            /* @for $i from 1 through 4 {
+                                &:nth-child(#{$i}) {
+                                    $delay: ($items - $i) * $transition-delay;
+                                    transition-delay: $delay;
+        
+                                    &:before {
+                                        transition-delay: $delay;
+                                    }
+                                }
+                            } */
+        
+                         
+                            &:before {
+                                opacity: 0;
+                            }
+                        }
+                    }
+
+    /* new end */
     
     .header__menu {
         display: none;
