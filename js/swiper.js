@@ -29,15 +29,15 @@ const swiper = new Swiper('.swiper', {
 
   slidesPerView: 2.3,
 
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView: 1,
-  //   },
-  //   480: {
-  //     slidesPerView: 2,
-  //   },
-  //   992: {
-  //     slidesPerView: 3,
-  //   },
-  // },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
 });
