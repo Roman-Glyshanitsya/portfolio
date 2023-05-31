@@ -151,9 +151,9 @@ img {
 
     .header__mobile-menu-close-btn {
         position: absolute;
-        top: 25px;
-        right: 40px;
-        padding: 0;
+        top: 0;
+        right: 0;
+        padding: 25px;
         border: none;
         background-color: transparent;
     }
