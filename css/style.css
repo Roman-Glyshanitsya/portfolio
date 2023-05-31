@@ -51,17 +51,17 @@ img {
     height: auto;
 }
 
-/* @media screen and (max-width: 767px) {
-    [class*="__container"] {
-        padding: 25px;
-    }
-} */
-
 @media screen and (min-width: 768px) {
     [class*="__container"] {
             /* max-width: 1025px; */
             padding: 70px 20px 25px 0px;
         }
+}
+
+@media screen and (max-width: 767px) {
+    section {
+        margin-bottom: 50px;
+    }
 }
 
 .section__title {
@@ -288,7 +288,6 @@ img {
         max-width: 100%;
         height: auto;
     }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -348,16 +347,6 @@ img {
 .work__image:hover img {
     transform: scale(1.03);
 }
-
-/* .work__image img.init {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    transition: transform 0.3s;
-} */
 
 .work__body {
     display: grid;
@@ -420,14 +409,6 @@ img {
 }
 
 /* =========== Contact =============== */
-.contact-section {}
-
-.contact__container {}
-
-.modal__form {
-
-}
-
 .modal__label {
     display: flex;
     flex-direction: column;
@@ -441,25 +422,11 @@ img {
     color: #000201;
 }
 
-.modal__input {
-    width: 579px;
-    padding: 16px;
-    margin-bottom: 5px;
-    background: #F1ECE6;
-    cursor: pointer;
-}
-
 .modal__input::placeholder {
     font-size: 18px;
     line-height: 1.27;    
     color: #9D9690;
 }
-
-/* .modal__input:focus {
-    border-color: #D3902A;
-} */
-
-.form__message {}
 
 .modal__button {
     padding: 16px 60px;
@@ -471,5 +438,25 @@ img {
     font-size: 18px;
     line-height: 1.27;    
     color: #F8F4F0;
+}
+
+@media screen and (max-width: 767px) {
+.modal__input {
+        width: 100%;
+        padding: 16px;
+        margin-bottom: 5px;
+        background: #F1ECE6;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+.modal__input {
+        width: 579px;
+        padding: 16px;
+        margin-bottom: 5px;
+        background: #F1ECE6;
+        cursor: pointer;
+    }
 }
 
