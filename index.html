@@ -25,10 +25,12 @@
       <a href="./index.html" class="header__logo">Roman H.</a>
 
       <!-------------------------------- Start Header Mobile Menu ---------------------------------->
-      <a href="" class="dark__theme">
-        <img class="dark__theme__img" src="./images/sun/sun.svg" alt="dark theme" />
-        Switch dark
-      </a>
+      <div class="dark__theme" dark-theme>
+        <svg class="dark__theme__icon" width="24" height="24">
+          <use href="./images/sun/symbol-defs.svg#icon-sun"></use>
+        </svg>
+        <p>Switch dark</p>
+      </div>
       <button type="button" class="header__mobile-menu-btn" data-menu-button>
         <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')">
           <path
@@ -45,11 +47,7 @@
 
       <div class="header__mobile-menu" data-menu>
         <div class="header__mobile-menu__container">
-          <button type="button" class="header__mobile-menu-close-btn" data-menu-close>
-            <!-- <svg width="25" height="25">
-              <use href="./images/mobile-menu-icons/symbol-defs.svg#icon-close"></use>
-            </svg> -->
-          </button>
+          <button type="button" class="header__mobile-menu-close-btn" data-menu-close></button>
           <ul class="mobile-menu__nav-list">
             <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
             <li class="nav__item"><a href="#works" class="nav__link">works</a></li>
@@ -69,10 +67,12 @@
             <li class="nav__item"><a href="#contact" class="nav__link">contact</a></li>
           </ul>
         </nav>
-        <a href="" class="dark__theme">
-          <img class="dark__theme__img" src="./images/sun/sun.svg" alt="dark theme" />
-          Switch dark
-        </a>
+        <div class="dark__theme" dark-theme>
+          <svg class="dark__theme__icon" width="24" height="24">
+            <use href="./images/sun/symbol-defs.svg#icon-sun"></use>
+          </svg>
+          <p>Switch dark</p>
+        </div>
       </div>
     </header>
 
@@ -304,5 +304,6 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/dark-theme.js"></script>
   </body>
 </html>
