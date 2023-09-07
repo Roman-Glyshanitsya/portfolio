@@ -246,7 +246,7 @@ img {
     }
 
     .dark__theme__icon {
-        margin-right: 15px;
+        margin-right: 5px;
         fill: var(--title-color);
     }
 }
