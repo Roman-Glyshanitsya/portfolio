@@ -53,9 +53,9 @@ img {
 
 @media screen and (min-width: 768px) {
     [class*="__container"] {
-            /* max-width: 1025px; */
-            padding: 70px 20px 25px 0px;
-        }
+        /* max-width: 1025px; */
+        padding: 70px 20px 25px 0px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -124,15 +124,62 @@ img {
         width: 100%;
         z-index: 100;
 
-       /* background-color: teal; */
+        /* background-color: teal; */
     }
 
-    .header__mobile-menu-btn {
+    /* .header__mobile-menu-btn {
         background-color: transparent;
         border: none;
         padding: 0;
+    } */
+
+    /* ==================== Start Mobile Btn From Codopen ==================== */
+    .header__mobile-menu-btn {
+        position: relative;
+        z-index: 1000;
+        background-color: transparent;
     }
-    
+
+    .ham {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        transition: transform 400ms;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .hamRotate.active {
+        transform: rotate(45deg);
+    }
+
+    .line {
+        fill: none;
+        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+        stroke: #000;
+        stroke-width: 5.5;
+        stroke-linecap: round;
+    }
+
+    .ham1 .top {
+        stroke-dasharray: 40 139;
+    }
+
+    .ham1 .bottom {
+        stroke-dasharray: 40 180;
+    }
+
+    .ham1.active .top {
+        stroke-dashoffset: -98px;
+    }
+
+    .ham1.active .bottom {
+        stroke-dashoffset: -138px;
+    }
+
+    /* ==================== End Mobile Btn From Codopen ==================== */
+
     .header__menu {
         display: none;
     }
@@ -146,7 +193,7 @@ img {
         height: 100%;
         overflow: auto;
         background-color: #F8F4F0;
-        
+
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
@@ -169,25 +216,43 @@ img {
     }
 
     .header__mobile-menu.is-open {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
 
-      transform: translateY(0);
-      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-    }  
+        transform: translateY(0);
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .dark__theme {
+        display: flex;
+        align-items: center;
+        left: 25px;
+        bottom: 25px;
+        width: 200px;
+
+        font-family: 'Archivo';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.1;
+        color: #000201;
+    }
+
+    .dark__theme__img {
+        margin-right: 15px;
+    }
 }
 
 /* ========== Desktop Header Menu ============*/
 @media screen and (min-width: 768px) {
     .header {
-            height: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            padding-top: 25px;
-            padding-left: 25px;
-        }
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 25px;
+        padding-left: 25px;
+    }
 
     .header__mobile-menu-btn {
         display: none;
@@ -196,45 +261,45 @@ img {
     .header__mobile-menu {
         display: none;
     }
-    
-        .header__nav {
-            margin-top: 90px;
-        }
-    
 
-    
-        .dark__theme {
-            display: flex;
-            align-items: center;
-            position: absolute;
-            left: 25px;
-            bottom: 25px;
-            width: 200px;
-    
-            font-family: 'Archivo';
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 1.1;
-            color: #000201;
-        }
-    
-        .dark__theme__img {
-            margin-right: 15px;
-        }
-    
+    .header__nav {
+        margin-top: 90px;
+    }
+
+
+
+    .dark__theme {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 25px;
+        bottom: 25px;
+        width: 200px;
+
+        font-family: 'Archivo';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.1;
+        color: #000201;
+    }
+
+    .dark__theme__img {
+        margin-right: 15px;
+    }
+
 }
 
 
 /* ========== Main =========== */
 @media screen and (max-width: 767px) {
-.main {
+    .main {
         padding: 25px;
         margin-top: 100px;
     }
 }
 
 @media screen and (min-width: 768px) {
-.main {
+    .main {
         margin-left: 380px;
     }
 }
@@ -292,9 +357,9 @@ img {
 
 @media screen and (min-width: 768px) {
     .swiper-slide img {
-            width: 470px;
-            height: 320px;
-        }
+        width: 470px;
+        height: 320px;
+    }
 
 }
 
@@ -393,7 +458,7 @@ img {
 .job-company {
     font-weight: 500;
     font-size: 18px;
-    line-height: 1.28; 
+    line-height: 1.28;
     margin-bottom: 10px;
 }
 
@@ -418,13 +483,13 @@ img {
 .modal__input__title {
     font-weight: 500;
     font-size: 18px;
-    line-height: 1.27;    
+    line-height: 1.27;
     color: #000201;
 }
 
 .modal__input::placeholder {
     font-size: 18px;
-    line-height: 1.27;    
+    line-height: 1.27;
     color: #9D9690;
 }
 
@@ -436,12 +501,12 @@ img {
 
 
     font-size: 18px;
-    line-height: 1.27;    
+    line-height: 1.27;
     color: #F8F4F0;
 }
 
 @media screen and (max-width: 767px) {
-.modal__input {
+    .modal__input {
         width: 100%;
         padding: 16px;
         margin-bottom: 5px;
@@ -451,7 +516,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-.modal__input {
+    .modal__input {
         width: 579px;
         padding: 16px;
         margin-bottom: 5px;
@@ -459,4 +524,3 @@ img {
         cursor: pointer;
     }
 }
-
