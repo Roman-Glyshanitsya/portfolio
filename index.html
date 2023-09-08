@@ -32,7 +32,7 @@
       </div>
 
       <button type="button" class="header__mobile-menu-btn" data-menu-button>
-        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')">
+        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="50" id="mySvg">
           <path
             class="line top"
             d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
@@ -51,10 +51,10 @@
           <div class="header__menu">
             <nav class="header__nav">
               <ul class="mobile-menu__nav-list">
-                <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
-                <li class="nav__item"><a href="#works" class="nav__link">works</a></li>
-                <li class="nav__item"><a href="#resume" class="nav__link">resume</a></li>
-                <li class="nav__item"><a href="#contact" class="nav__link">contact</a></li>
+                <li class="nav__item"><a data-goto=".section__about" class="nav__link">about</a></li>
+                <li class="nav__item"><a data-goto=".works__section" class="nav__link">works</a></li>
+                <li class="nav__item"><a data-goto=".resume__section" class="nav__link">resume</a></li>
+                <li class="nav__item"><a data-goto=".contact__section" class="nav__link">contact</a></li>
               </ul>
             </nav>
           </div>
@@ -95,7 +95,7 @@
       </section>
 
       <!-- Work Section -->
-      <section id="works" class="works">
+      <section id="works" class="works__section">
         <div class="works__container">
           <h2 class="section__title">Works</h2>
           <p class="section__text">Repository of projects that I worked before.</p>
@@ -199,7 +199,7 @@
 
       <!-- Resume Section -->
 
-      <section id="resume" class="resume-section">
+      <section id="resume" class="resume__section">
         <div class="resume__container">
           <h2 class="section__title">Resume</h2>
           <p class="section__text">
@@ -249,7 +249,7 @@
 
       <!-- Contact Section -->
 
-      <section id="contact" class="contact-section">
+      <section id="contact" class="contact__section">
         <div class="contact__container">
           <h2 class="section__title">Contact</h2>
           <p class="section__text">Let's Chat!</p>
@@ -291,5 +291,6 @@
     <script src="js/script.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/dark-theme.js"></script>
+    <!-- <script src="js/anchor-menu.js"></script> -->
   </body>
 </html>

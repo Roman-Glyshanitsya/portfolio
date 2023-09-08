@@ -115,6 +115,7 @@ img {
     line-height: 1.08;
     letter-spacing: -0.8px;
     color: var(--nav-link-color);
+    cursor: pointer;
 }
 
 .nav__link:hover {
