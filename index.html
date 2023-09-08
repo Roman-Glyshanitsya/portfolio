@@ -24,13 +24,13 @@
     <header class="header">
       <a href="./index.html" class="header__logo">Roman H.</a>
 
-      <!-------------------------------- Start Header Mobile Menu ---------------------------------->
       <div class="dark__theme" dark-theme>
         <svg class="dark__theme__icon" width="24" height="24">
           <use href="./images/sun/symbol-defs.svg#icon-sun"></use>
         </svg>
         <p class="dark__theme__text">Switch dark</p>
       </div>
+
       <button type="button" class="header__mobile-menu-btn" data-menu-button>
         <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')">
           <path
@@ -48,25 +48,17 @@
       <div class="header__mobile-menu" data-menu>
         <div class="header__mobile-menu__container">
           <button type="button" class="header__mobile-menu-close-btn" data-menu-close></button>
-          <ul class="mobile-menu__nav-list">
-            <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
-            <li class="nav__item"><a href="#works" class="nav__link">works</a></li>
-            <li class="nav__item"><a href="#resume" class="nav__link">resume</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">contact</a></li>
-          </ul>
+          <div class="header__menu">
+            <nav class="header__nav">
+              <ul class="mobile-menu__nav-list">
+                <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
+                <li class="nav__item"><a href="#works" class="nav__link">works</a></li>
+                <li class="nav__item"><a href="#resume" class="nav__link">resume</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">contact</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </div>
-      <!-------------------------------- END Header Mobile Menu ------------------------------------->
-
-      <div class="header__menu">
-        <nav class="header__nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#about" class="nav__link active">about</a></li>
-            <li class="nav__item"><a href="#works" class="nav__link">works</a></li>
-            <li class="nav__item"><a href="#resume" class="nav__link">resume</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">contact</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
 
