@@ -1,0 +1,66 @@
+/* ========= Works =========== */
+.works__filter {
+  margin-bottom: 25px;
+}
+
+.filter-works {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  row-gap: 5px;
+  flex-wrap: wrap;
+}
+
+.filter-works__item {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--text-color);
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-works__item:hover,
+.filter-works__item.active {
+  color: var(--title-color);
+}
+
+.works__items {
+  transition: all 0.3s;
+}
+
+.works__item {
+  width: 328px;
+}
+
+.works__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.work__image {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.work__image:hover img {
+  transform: scale(1.03);
+}
+
+.work__body {
+  display: grid;
+  gap: 5px;
+}
+
+.work__link-title {
+  font-size: 18px;
+}
+
+.work__link-title:hover {
+  text-decoration: underline;
+}
+
+.work__text {
+  font-size: 16px;
+  line-height: 1.25;
+}

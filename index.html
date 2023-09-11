@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Portfolio</title>
   </head>
 
@@ -23,30 +23,31 @@
     <!-- Header -->
     <header class="header">
       <a href="./index.html" class="header__logo">Roman H.</a>
+      <div class="header__mobile-icons">
+        <div class="dark__theme" dark-theme>
+          <svg class="dark__theme__icon">
+            <use href="./images/sun/symbol-defs.svg#icon-sun"></use>
+          </svg>
+          <p class="dark__theme__text">Switch dark</p>
+        </div>
 
-      <div class="dark__theme" dark-theme>
-        <svg class="dark__theme__icon" width="24" height="24">
-          <use href="./images/sun/symbol-defs.svg#icon-sun"></use>
-        </svg>
-        <p class="dark__theme__text">Switch dark</p>
+        <button type="button" class="header__mobile-menu-btn" data-menu-button>
+          <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="50" id="mySvg">
+            <path
+              class="line top"
+              d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+            />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path
+              class="line bottom"
+              d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+            />
+          </svg>
+        </button>
       </div>
 
-      <button type="button" class="header__mobile-menu-btn" data-menu-button>
-        <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="50" id="mySvg">
-          <path
-            class="line top"
-            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
-          />
-          <path class="line middle" d="m 30,50 h 40" />
-          <path
-            class="line bottom"
-            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
-          />
-        </svg>
-      </button>
-
       <div class="header__mobile-menu" data-menu>
-        <div class="header__mobile-menu__container">
+        <div class="header__mobile-menu__container container">
           <button type="button" class="header__mobile-menu-close-btn" data-menu-close></button>
           <div class="header__menu">
             <nav class="header__nav">
@@ -65,38 +66,40 @@
     <!-- Main -->
     <main class="main">
       <!-- About Section -->
-      <section id="about" class="section__about section__about__container">
-        <h1 class="section__title">Simply said, <br />I love design and code.</h1>
-        <p class="section__title--colored">And... I love Javanese food</p>
-        <p class="section__text">
-          Based in the beautiful city of Bali, Indonesia. I am currently exploring the
-          <span class="section__text--bold">UI/UX design, Tailwind-css</span> and
-          <span class="section__text--bold">NextJS</span>.
-        </p>
-        <p class="section__text">
-          I am either smiling or looking super serious. If it's the latter one, I am probably thinking about food.
-        </p>
+      <section id="about" class="section__about">
+        <div class="container">
+          <h1 class="section__title">Simply said, <br />I love design and code.</h1>
+          <p class="section__title--colored">And... I love Javanese food</p>
+          <p class="section__text">
+            Based in the beautiful city of Bali, Indonesia. I am currently exploring the
+            <span class="section__text--bold">UI/UX design, Tailwind-css</span> and
+            <span class="section__text--bold">NextJS</span>.
+          </p>
+          <p class="section__text">
+            I am either smiling or looking super serious. If it's the latter one, I am probably thinking about food.
+          </p>
 
-        <!-- Slider main container -->
-        <div class="swiper-custom">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="images/swiper-images/image-1.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="images/swiper-images/image-2.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="images/swiper-images/image-3.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="images/swiper-images/image-4.jpg" alt="" /></div>
+          <!-- Slider main container -->
+          <div class="swiper-custom">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/swiper-images/image-1.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="images/swiper-images/image-2.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="images/swiper-images/image-3.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="images/swiper-images/image-4.jpg" alt="" /></div>
+              </div>
+              <!-- <div class="swiper-scrollbar"></div> -->
             </div>
-            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
         </div>
       </section>
 
       <!-- Work Section -->
       <section id="works" class="works__section">
-        <div class="works__container">
+        <div class="container">
           <h2 class="section__title">Works</h2>
           <p class="section__text">Repository of projects that I worked before.</p>
           <div class="works__filter filter-works">
@@ -200,7 +203,7 @@
       <!-- Resume Section -->
 
       <section id="resume" class="resume__section">
-        <div class="resume__container">
+        <div class="container">
           <h2 class="section__title">Resume</h2>
           <p class="section__text">
             A summary of my education, work history, credentials, and other accomplishments and skills
@@ -250,7 +253,7 @@
       <!-- Contact Section -->
 
       <section id="contact" class="contact__section">
-        <div class="contact__container">
+        <div class="container">
           <h2 class="section__title">Contact</h2>
           <p class="section__text">Let's Chat!</p>
 

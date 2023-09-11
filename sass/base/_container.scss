@@ -1,0 +1,19 @@
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 70px 20px 25px 0px;
+  }
+}
+
+/* ========== Main =========== */
+@media screen and (max-width: 767px) {
+  .main {
+    padding: 25px;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    margin-left: 380px;
+  }
+}

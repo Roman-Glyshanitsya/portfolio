@@ -1,0 +1,198 @@
+.header__logo {
+  position: relative;
+  z-index: 1000;
+
+  font-family: 'Archivo';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: -0.8px;
+  color: var(--title-color);
+}
+
+.nav__link {
+  font-family: 'Archivo';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.08;
+  letter-spacing: -0.8px;
+  color: var(--nav-link-color);
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  color: var(--title-color);
+}
+
+.nav__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+/* ========== Header Mobile Menu ============*/
+@media screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--body-color);
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .header__mobile-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  .dark__theme {
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    color: var(--title-color);
+    cursor: pointer;
+  }
+
+  .dark__theme__icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    fill: var(--title-color);
+  }
+
+  .dark__theme__text {
+    display: none;
+  }
+
+  /* ==================== Start Mobile Btn From Codopen ==================== */
+  .header__mobile-menu-btn {
+    position: relative;
+    z-index: 1000;
+    background-color: transparent;
+  }
+
+  .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+
+  .line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: var(--title-color);
+    stroke-width: 5.5;
+    stroke-linecap: round;
+  }
+
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+
+  .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+
+  .ham1.active .bottom {
+    stroke-dashoffset: -138px;
+  }
+
+  /* ==================== End Mobile Btn From Codopen ==================== */
+  .header__mobile-menu {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--body-color);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-100%);
+  }
+
+  .header__mobile-menu__container {
+    position: relative;
+    padding-left: 180px;
+    padding-top: 40px;
+  }
+
+  .header__mobile-menu-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .header__mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: translateY(0);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* ========== Desktop Header Menu ============*/
+@media screen and (min-width: 768px) {
+  .header {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 25px;
+    padding-left: 25px;
+  }
+
+  .header__mobile-menu-btn {
+    display: none;
+  }
+
+  .header__nav {
+    margin-top: 90px;
+  }
+
+  .dark__theme {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    width: 200px;
+
+    font-family: 'Archivo';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    color: var(--title-color);
+    cursor: pointer;
+  }
+
+  .dark__theme__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    fill: var(--title-color);
+  }
+}

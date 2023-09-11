@@ -1,0 +1,49 @@
+/* =========== Contact =============== */
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.modal__input__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.27;
+  color: var(--title-color);
+}
+
+.modal__input::placeholder {
+  font-size: 18px;
+  line-height: 1.27;
+  color: #9d9690;
+}
+
+.modal__button {
+  padding: 16px 60px;
+  width: 164px;
+  height: 55px;
+  background-color: var(--title-color);
+
+  font-size: 18px;
+  line-height: 1.27;
+  color: var(--body-color);
+}
+
+@media screen and (max-width: 767px) {
+  .modal__input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 5px;
+    background: #f1ece6;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal__input {
+    width: 579px;
+    padding: 16px;
+    margin-bottom: 5px;
+    background: #f1ece6;
+    cursor: pointer;
+  }
+}
