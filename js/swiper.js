@@ -9,17 +9,12 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
   },
 
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  //   draggable: true,
-  // },
-
-  // autoplay: {
-  //   delay: 1000,
-  //   stopOnLastSlide: true,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2000,
+    stopOnLastSlide: true,
+    disableOnInteraction: false,
+    stopOnLastSlide: false,
+  },
 
   mousewheel: {
     invert: false,
@@ -36,7 +31,7 @@ const swiper = new Swiper('.swiper', {
     480: {
       slidesPerView: 2,
     },
-    992: {
+    768: {
       slidesPerView: 3,
     },
   },

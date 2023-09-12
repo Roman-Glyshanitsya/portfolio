@@ -1,19 +1,12 @@
-/* ========= Section About =========== */
 .section__title--colored {
   font-weight: 700;
   line-height: 1.55;
   color: #d3902a;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 
 .section__text--bold {
   color: var(--title-color);
-}
-
-@media screen and (max-width: 767px) {
-  .section__text {
-    margin-bottom: 60px;
-  }
 }
 
 /* Swiper */
@@ -43,9 +36,22 @@
 }
 
 @media screen and (max-width: 767px) {
+  .section__text {
+    margin-top: 20px;
+  }
+
   .swiper-slide img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 15px;
+  }
+
+  .swiper-wrapper__list {
+    margin-top: 50px;
   }
 }
 
