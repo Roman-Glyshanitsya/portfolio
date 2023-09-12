@@ -40,10 +40,10 @@
     margin-top: 20px;
   }
 
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
-  }
+  // .swiper-slide img {
+  //   width: 100%;
+  //   height: auto;
+  // }
 
   .swiper-button-next,
   .swiper-button-prev {
@@ -56,8 +56,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .swiper-slide img {
-    width: 470px;
-    height: 320px;
-  }
+  // .swiper-slide img {
+  //   width: 470px;
+  //   height: 320px;
+  // }
 }
