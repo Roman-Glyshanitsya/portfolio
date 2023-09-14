@@ -9,12 +9,12 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
   },
 
-  autoplay: {
-    delay: 2000,
-    stopOnLastSlide: true,
-    disableOnInteraction: false,
-    stopOnLastSlide: false,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  //   stopOnLastSlide: true,
+  //   disableOnInteraction: false,
+  //   stopOnLastSlide: false,
+  // },
 
   mousewheel: {
     invert: false,
