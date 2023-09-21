@@ -2,7 +2,7 @@
   font-weight: 700;
   line-height: 1.55;
   color: #d3902a;
-  // margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .section__text--bold {
@@ -36,9 +36,9 @@
 }
 
 @media screen and (max-width: 767px) {
-  .section__text {
-    margin-top: 20px;
-  }
+  // .section__text {
+  //   margin-top: 20px;
+  // }
 
   // .swiper-slide img {
   //   width: 100%;

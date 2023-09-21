@@ -86,6 +86,9 @@ img {
   section {
     margin-bottom: 50px;
   }
+  .section__text {
+    margin-bottom: 20px;
+  }
 }
 .section__title {
   font-family: "Archivo";
@@ -94,7 +97,7 @@ img {
   line-height: 1.17;
   letter-spacing: -0.8px;
   color: var(--title-color);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -294,6 +297,7 @@ img {
   font-weight: 700;
   line-height: 1.55;
   color: #d3902a;
+  margin-bottom: 20px;
 }
 
 .section__text--bold {
@@ -327,9 +331,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .section__text {
-    margin-top: 20px;
-  }
   .swiper-button-next,
   .swiper-button-prev {
     top: 15px;
@@ -371,11 +372,11 @@ img {
 }
 
 .works__item {
-  width: 328px;
+  width: 100%;
 }
 
 .works__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .work__image {
@@ -406,6 +407,11 @@ img {
   line-height: 1.25;
 }
 
+@media screen and (min-width: 768px) {
+  .works__item {
+    width: 328px;
+  }
+}
 /* Resume Section */
 .job-thumb {
   display: flex;
