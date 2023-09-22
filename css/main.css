@@ -14,8 +14,6 @@
 
 html,
 body {
-  height: 100%;
-  min-width: 320px;
   box-sizing: border-box;
 }
 
@@ -65,12 +63,6 @@ img {
   height: auto;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 70px 20px 25px 0px;
-  }
-}
-/* ========== Main =========== */
 @media screen and (max-width: 767px) {
   .main {
     padding: 25px;
@@ -81,13 +73,8 @@ img {
   .main {
     margin-left: 380px;
   }
-}
-@media screen and (max-width: 767px) {
-  section {
-    margin-bottom: 50px;
-  }
-  .section__text {
-    margin-bottom: 20px;
+  .container {
+    padding: 70px 20px 25px 0px;
   }
 }
 .section__title {
@@ -100,6 +87,14 @@ img {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  section {
+    margin-bottom: 50px;
+  }
+  .section__text {
+    margin-bottom: 20px;
+  }
+}
 @media screen and (min-width: 768px) {
   .section__text {
     max-width: 510px;
