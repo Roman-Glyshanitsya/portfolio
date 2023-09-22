@@ -32,8 +32,15 @@ if (menuLinks.length > 0) {
     const menuLink = e.target;
     if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
       const gotoBlock = document.querySelector(menuLink.dataset.goto);
-      const gotoBlockValue =
-        gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight;
+
+      let gotoBlockValue;
+
+      if (window.innerWidth < 768) {
+        gotoBlockValue =
+          gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight;
+      } else {
+        gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY;
+      }
 
       if (mobileMenuRef.classList.contains('is-open')) {
         mobileMenuRef.classList.remove('is-open');
