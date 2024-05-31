@@ -13,12 +13,13 @@ function imagesInit() {
 }
 
 function gridInit() {
-  const items = document.querySelector('.works__items');
+  const items = document.querySelector('.works__items-list');
   const itemsGrid = new Isotope(items, {
     itemSelector: '.work',
     masonry: {
       fitWidth: true,
-      gutter: 20,
+      gutter: 30,
+      horizontalOrder: true,
     },
   });
 
